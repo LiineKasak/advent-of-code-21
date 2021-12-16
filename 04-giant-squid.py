@@ -42,8 +42,6 @@ def part1():
 
     for board in boards:
         nr_moves, unmarked_sum = get_win_index(board, numbers)
-        print(nr_moves, unmarked_sum)
-        print(numbers[nr_moves])
         if nr_moves < best_move_nr:
             winning_score = unmarked_sum * numbers[nr_moves]
             best_move_nr = nr_moves
@@ -51,7 +49,17 @@ def part1():
 
 
 def part2():
-    pass
+    numbers, boards = get_input()
+
+    best_move_nr = 0
+    winning_score = 0
+
+    for board in boards:
+        nr_moves, unmarked_sum = get_win_index(board, numbers)
+        if nr_moves > best_move_nr:
+            winning_score = unmarked_sum * numbers[nr_moves]
+            best_move_nr = nr_moves
+    print(winning_score)
 
 
 if __name__ == '__main__':
