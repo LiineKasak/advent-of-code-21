@@ -4,7 +4,7 @@ from functools import reduce
 
 
 def get_input():
-    file = open('16-input.txt')
+    file = open('input/16.txt')
     return file.readlines()[0]
 
 

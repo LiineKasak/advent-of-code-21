@@ -1,7 +1,7 @@
 # https://adventofcode.com/2021/day/1
 
 def get_input():
-    file = open('01-input.txt')
+    file = open('input/01.txt')
     return list(map(int, file.readlines()))
 
 

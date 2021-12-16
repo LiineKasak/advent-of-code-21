@@ -3,7 +3,7 @@ import numpy as np
 
 def get_input() -> np.ndarray:
     """Get bits as numpy array."""
-    file = open('03-input.txt')
+    file = open('input/03.txt')
     return np.array([[int(bit) for bit in line.replace('\n', '')] for line in file.readlines()])
 
 

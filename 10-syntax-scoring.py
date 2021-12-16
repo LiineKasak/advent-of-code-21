@@ -1,5 +1,5 @@
 def get_input():
-    file = open('10-input.txt')
+    file = open('input/10.txt')
     return list(map(lambda line: line.replace('\n', ''), file.readlines()))
 
 

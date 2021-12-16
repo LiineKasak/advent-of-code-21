@@ -4,7 +4,7 @@ board_len = 5
 
 
 def get_input():
-    file = open('04-input.txt')
+    file = open('input/04.txt')
     lines = file.readlines()
     bingo_numbers = list(map(int, lines[0].split(',')))
     bingo_boards = []

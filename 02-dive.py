@@ -2,7 +2,7 @@ from typing import Callable
 
 
 def get_input():
-    file = open('02-input.txt')
+    file = open('input/02.txt')
     return file.readlines()
 
 
