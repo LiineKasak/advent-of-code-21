@@ -9,8 +9,6 @@ def simulate(timers: list, nr_days) -> list:
         nr_creates_new = timers[0]
         timers = timers[1:] + [nr_creates_new]
         timers[6] += nr_creates_new
-        print(f'day {i + 1}: {timers}')
-
     return timers
 
 
