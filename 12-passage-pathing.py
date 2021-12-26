@@ -35,17 +35,6 @@ def dfs(neighbors: dict, path: list = ['start'], allow_twice: bool = True):
     return nr_paths
 
 
-def count_paths(neighbor_map: dict):
-    current = 'start'
-    path = [current]
-
-    while True:
-        for neighbor in neighbor_map[current]:
-            if neighbor.islower() and neighbor in path:
-                continue
-            path.append(neighbor)
-
-
 def part1():
     graph_edges = get_input()
     neighbor_map = get_neighbors(graph_edges)

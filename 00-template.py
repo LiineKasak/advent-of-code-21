@@ -1,6 +1,6 @@
 def get_input():
     file = open('input/00.txt')
-    return file.readlines()
+    return list(map(lambda line: line.rstrip(), file.readlines()))
 
 
 def part1():
